@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwadi University - Rajkot</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .mu-header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1541339907198-e08756defe43?q=80&w=2070') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 160px 0;
+        }
+
+        .section-padding {
+            padding: 60px 0;
+        }
+
+        .news-card {
+            border: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 40px 0;
+        }
+        footer a {
+            color: #bbb;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="#">MARWADI UNIVERSITY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faculties">Faculties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Header / Hero Section -->
+    <header id="home" class="mu-header">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Welcome to Marwadi University</h1>
+            <p class="lead">Igniting minds, changing lives, and building future leaders in Rajkot, Gujarat.</p>
+            <a href="#about" class="btn btn-warning btn-lg mt-3 fw-bold text-dark">Explore Campus</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- 3. Content Section: About (Using Bootstrap Grid) -->
+        <section id="about" class="section-padding">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdniAKk8WAXlmYufTg5rDkbGeGsjLzmfYDxKwO86L3rNaslEM9yrwnRrM&s=10" alt="MU Campus" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h2 class="fw-bold mb-3">About Marwadi University</h2>
+                    <p class="lead">A State Private University located in Rajkot, offering world-class education.</p>
+                    <p>Marwadi University (MU) is known for its state-of-the-art infrastructure, experienced faculty, and strong industry linkages. We provide a vibrant learning ecosystem across various streams like Engineering, Computer Applications, Business Management, Science, and Pharmacy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Content Section: Faculties / Departments (Using Bootstrap Grid & Cards) -->
+        <section id="faculties" class="bg-light section-padding rounded my-4">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5">Our Faculties of Study</h2>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Faculty of Technology</h5>
+                                <p class="card-text text-muted small">Computer Science, IT, Civil, Mechanical & Electrical Engineering.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Faculty of Business Mgmt.</h5>
+                                <p class="card-text text-muted small">BBA, MBA programs focused on corporate leadership.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Faculty of Science</h5>
+                                <p class="card-text text-muted small">Advanced research and degree programs in core sciences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Faculty of Pharmacy</h5>
+                                <p class="card-text text-muted small">Cutting-edge pharmaceutical research and healthcare training.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Content Section: Events (Grid layout) -->
+        <section id="events" class="section-padding">
+            <h2 class="text-center fw-bold mb-5">Campus News & Events</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card news-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBOEOT81z4bTpasVy_9VXEwkJ2SzAbvtifgdWq-GM58w&s=10" class="card-img-top" alt="Event">
+                        <div class="card-body">
+                            <span class="text-danger fw-bold small">Cultural Fest</span>
+                            <h5 class="card-title fw-bold mt-1">Marwadi University Annual Fest</h5>
+                            <p class="card-text text-muted">A grand celebration of talent, music, dance, and technology.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card news-card h-100">
+                        <img src="https://internshala-competitions.s3.ap-south-1.amazonaws.com/competitions/wp-content/uploads/2026/06/09163637/intellify.jpg" class="card-img-top" alt="Event">
+                        <div class="card-body">
+                            <span class="text-danger fw-bold small">Innovation</span>
+                            <h5 class="card-title fw-bold mt-1">National Level Hackathon</h5>
+                            <p class="card-text text-muted">Coders and innovators coming together to build smart solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card news-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmOdWBtQZzBn6NYCybxIQuwG2-nDPQy2ij0_eSNCIFhg&s=10" class="card-img-top" alt="Event">
+                        <div class="card-body">
+                            <span class="text-danger fw-bold small">Placement Drive</span>
+                            <h5 class="card-title fw-bold mt-1">Global Recruiters on Campus</h5>
+                            <p class="card-text text-muted">Multinational corporations offering top packages to MU students.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- 6. Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5 class="fw-bold text-warning mb-3">Marwadi University</h5>
+                    <p class="mb-1">Rajkot-Morbi Road, Rajkot - 360003</p>
+                    <p class="mb-1">Gujarat, India</p>
+                    <p class="mb-1">Email: info@marwadieducation.edu.in</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5 class="fw-bold text-warning mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Placements</a></li>
+                        <li><a href="#">Campus Tour</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-muted small">
+                <p class="mb-0">&copy; 2026 Marwadi University. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
